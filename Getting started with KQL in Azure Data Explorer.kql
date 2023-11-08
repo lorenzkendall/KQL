@@ -1,5 +1,6 @@
 // Open Azure Data Explorer and sign in with a personal Microsoft account.
 // https://dataexplorer.azure.com/clusters/help/databases/SecurityLogs
+// Select the SecurityLogs database from the left-pane navigation tree.
 
 // Read descriptions, copy, and Run these queries in Data Explorer. 
 
@@ -16,3 +17,7 @@ AuthenticationEvents
 | take 5
 | project username, timestamp, result
 
+// Takes 5 random rows and only the 1 specified (distinct) columns.
+AuthenticationEvents
+| take 5
+| distinct username

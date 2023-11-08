@@ -1,7 +1,7 @@
-// Open Azure Data Explorer and sign in with a personal Microsoft account.
-// https://dataexplorer.azure.com/clusters/help/databases/SecurityLogs
-// Select the SecurityLogs database from the left-pane navigation tree.
-// Read descriptions, copy, and Run these queries in Data Explorer. 
+// 1. Open Azure Data Explorer and sign in with a personal Microsoft account.
+// 2. https://dataexplorer.azure.com/clusters/help/databases/SecurityLogs
+// 3. Select the SecurityLogs database from the left-pane navigation tree.
+// 4. Read descriptions, copy, and Run these queries in Data Explorer. 
 
 // Selects the "AuthenticationEvents" table, provides a total count of events.
 AuthenticationEvents

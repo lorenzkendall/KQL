@@ -20,3 +20,7 @@ AuthenticationEvents
 AuthenticationEvents
 | take 5
 | distinct username
+
+// Filters by condition, showing failed logins for user 'chricks'
+AuthenticationEvents
+| where username == 'chricks' and result == 'Failed Login'

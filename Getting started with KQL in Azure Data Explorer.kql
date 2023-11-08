@@ -1,12 +1,17 @@
-// References table + total # events
+// Open Azure Data Explorer and sign in with a personal Microsoft account.
+// https://dataexplorer.azure.com/clusters/help/databases/SecurityLogs
+
+// Read descriptions, copy, and Run these queries in Data Explorer. 
+
+// Selects the "AuthenticationEvents" table, provides a total count of events.
 AuthenticationEvents
 | count 
 
-// Pulls 5 data samples
+// Takes 5 random rows and all columns.
 AuthenticationEvents
 | take 5
 
-// Same + specifies 3 columns
+// Takes 5 random rows and only the 3 specified columns.
 AuthenticationEvents
 | take 5
 | project username, timestamp, result

@@ -1,12 +1,12 @@
-// References table + total # events //
+// References table + total # events
 AuthenticationEvents
 | count 
 
-// Pulls 5 data samples //
+// Pulls 5 data samples
 AuthenticationEvents
 | take 5
 
-// Same + specifies 3 columns //
+// Same + specifies 3 columns
 AuthenticationEvents
 | take 5
 | project username, timestamp, result

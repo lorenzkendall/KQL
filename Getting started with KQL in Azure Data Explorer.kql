@@ -24,3 +24,6 @@ AuthenticationEvents
 // Filters by condition, showing failed logins for user 'chricks'
 AuthenticationEvents
 | where username == 'chricks' and result == 'Failed Login'
+
+// Shows all tables in the current database
+.show tables 

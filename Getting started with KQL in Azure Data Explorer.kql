@@ -3,6 +3,9 @@
 // Select the SecurityLogs database from the left-pane navigation tree.
 // Read descriptions, copy, and Run these queries in Data Explorer. 
 
+// Shows all tables in the current database
+.show tables 
+
 // Selects the "AuthenticationEvents" table, provides a total count of events.
 AuthenticationEvents
 | count 
@@ -25,5 +28,3 @@ AuthenticationEvents
 AuthenticationEvents
 | where username == 'chricks' and result == 'Failed Login'
 
-// Shows all tables in the current database
-.show tables 

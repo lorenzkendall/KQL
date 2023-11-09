@@ -28,3 +28,4 @@ AuthenticationEvents
 AuthenticationEvents
 | where username == 'chricks' and result == 'Failed Login'
 
+

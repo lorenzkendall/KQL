@@ -28,5 +28,9 @@ AuthenticationEvents
 AuthenticationEvents
 | where username == 'chricks' and result == 'Failed Login'
 
+// Filters by condition, showing auth events within the last 7 days
+AuthenticationEvents
+| where TimeGenerated >= ago(7d)
+
 // Resources
 // https://learn.microsoft.com/en-us/azure/data-explorer/kusto/query/kql-quick-reference
